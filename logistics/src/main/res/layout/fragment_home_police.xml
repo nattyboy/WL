@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_police"
+    >
+
+    <TextView
+        android:id="@+id/fragment_home_police_tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F2F2F2"
+        android:padding="8dp"
+        android:text="合肥.中国科技大学(西校区)"
+        android:drawableLeft="@mipmap/address"
+        android:drawablePadding="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="#576B95"
+        android:textSize="12sp"
+        />
+
+    <ExpandableListView
+        android:id="@+id/fragment_home_police_elv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        >
+
+    </ExpandableListView>
+
+</LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="backTo"
+            android:paddingRight="20dp"
+            android:src="@drawable/dingbu_fanhui2"/>
+        <TextView
+            android:id="@+id/search_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="添加好友"
+            android:textSize="18sp"/>
+
+        <View
+            android:id="@+id/under_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#e9e9e9"></View>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/search_friend_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:background="@color/group_list_liner"
+        android:orientation="horizontal"
+        >
+        <SearchView
+            android:id="@+id/de_ui_search"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edit_bar_search"
+            android:queryHint="昵称"
+            android:imeOptions="actionSearch"
+            android:visibility="gone"
+            android:textSize="12sp" >
+        </SearchView>
+
+        <EditText
+            android:id="@+id/de_ui_search_gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/rc_ed_public_service_search_selector"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:textColor="@color/black_textview" />
+
+        <Button
+            android:id="@+id/de_search"
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/button_backgroud"
+            android:visibility="gone"
+            android:text="搜索"
+            android:textColor="@color/rc_text_color_secondary_inverse" />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/shape_search_app_bg_yj"
+            android:orientation="horizontal">
+
+            <!-- 输入的搜索信息 -->
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:imeOptions="actionSearch"
+                android:layout_marginLeft="10dp"
+                android:textColor="#0e0e0e"
+                android:drawablePadding="5dp"
+                android:textSize="17sp"
+                android:singleLine="true"
+                android:hint="昵称"
+                android:textColorHint="#e6e6e6"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/search"
+                android:background="@null"/>
+
+
+            <!-- 清空搜索文字按钮 -->
+            <LinearLayout
+                android:id="@+id/layout_clear_search_text"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:visibility="visible"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/btn_clear_search_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/selector_btn_search_clear_text_right"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_add"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/members" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="路线成员"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#0E0E0E"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"></View>
+
+    <LinearLayout
+        android:id="@+id/layout_chat_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/members" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            android:text="附近的人"
+            android:textColor="#0E0E0E"
+            android:textSize="15sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DEDEDE"></View>
+
+    <ListView
+        android:id="@+id/de_search_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

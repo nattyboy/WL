@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="10dp">
+    <CheckBox
+        android:id="@+id/item_frag_police_group_cbox_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交通事故出现"
+        android:textColor="#666666"
+        android:clickable="false"
+        android:focusable="false"
+        android:paddingLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:button="@drawable/cbox_police_selector"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:id="@+id/item_frag_police_group_cbox_send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="发送"
+        android:textColor="@drawable/cbox_bg_text_checked"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:background="@drawable/cbox_bg_selector"
+        android:textSize="15sp"/>
+
+</LinearLayout>
